@@ -22,14 +22,16 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
             throw new Error('Expected an array under key "shift_schedule" but got: ' + JSON.stringify(data));
         }
 
+        var shiftSchedule = data.shift_schedule;
+
         // Display JSON data as a table
         var tableHtml = '<table>';
         tableHtml += '<thead><tr>';
-        for (var key in data.shift_schedule[0]) {
+        for (var key in shiftSchedule[0]) {
             tableHtml += '<th>' + key + '</th>';
         }
         tableHtml += '</tr></thead><tbody>';
-        data.shift_schedule.forEach(function(row) {
+        shiftSchedule.forEach(function(row) {
             tableHtml += '<tr>';
             for (var key in row) {
                 tableHtml += '<td>' + row[key] + '</td>';
