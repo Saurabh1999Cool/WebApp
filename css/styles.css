@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, form, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center align the heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the form */
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the file input */
+input[type="file"] {
+    margin-right: 10px;
+}
+
+/* Style the upload button */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style table header */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+/* Style table cells */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Alternate row color */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #ddd;
+}
