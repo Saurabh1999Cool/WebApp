@@ -2,6 +2,8 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
     event.preventDefault();
     
     var formData = new FormData(this);
+    var fileInput = document.querySelector('input[type="file"]');
+    formData.append('file', fileInput.files[0]);
     
     fetch('http://saurabh5699.pythonanywhere.com/upload', {
         method: 'POST',
