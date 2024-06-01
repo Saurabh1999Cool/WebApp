@@ -3,7 +3,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
     
     var formData = new FormData(this);
     
-    fetch('YOUR_API_ENDPOINT', {
+    fetch('http://saurabh5699.pythonanywhere.com/upload', {
         method: 'POST',
         body: formData
     })
